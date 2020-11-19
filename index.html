@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <header class="container-fluid text-center text-white bg-dark">
+        <div class="p-3">
+            <h2>Weather Dashboard</h2>
+        </div>
+    </header>
+
+    <div id="container" class="container-fluid row">
+        
+        <form id="form-row" class="col-2">
+            <p class ="Search City"> Search City: </p>  
+                <input type="text" class="form-control" placeholder="City">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button" id="searchBtn"><i class="fas fa-search"></i></button>
+                  </div>
+              
+            </form>
+
+        <section id="container City Weather" class="col-10 p-2">
+        <h2 id="cityName">
+            <p class="Seattle (11/17/2020)">Seattle (11/17/2020)</p>
+            <img src="https://openweathermap.org/img/wn/04d.png">
+        </h2>
+
+        <p id="temperature">Temperature: °F</p>
+        <p id="humidity">Humidity %</p>
+        <p id="Wind Speed">Wind Speed MPH </p>
+        <p id="UV Index">UV Index:
+            <span id="uvIndex" class="bg-success text-white p-1 rounded"></span>
+        </p>
+
+        <p class="Five Day Forecast">Five Day Forecast:</p>
+        
+
+        <div class="container row justify-content-between" id="weekly-forecast-container"></div>
+        <div class="card">
+        <div class="card" style="width: 10rem;">
+            <img src="http://openweathermap.org/img/wn/10d.png" class="card-img-top" >
+            <div class="card-body">
+              <h5 class="card-title" id="dayOne"> date</h5>
+              <p class="card-text">Some quick example</p>
+              
+            </div>
+          </div>
+          <div class="card" style="width: 10rem;">
+            <img src="http://openweathermap.org/img/wn/10d.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title"id="dayTwo"> date</h5>
+              <p class="card-text">Some quick example</p>
+              
+            </div>
+          </div>
+          <div class="card" style="width: 10rem;">
+            <img src="http://openweathermap.org/img/wn/10d.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title"id="dayThree"> date</h5>
+              <p class="card-text">Some quick example </p>
+              
+            </div>
+          </div>
+          <div class="card" style="width: 10rem;">
+            <img src="http://openweathermap.org/img/wn/10d.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title" id="dayFour"> date</h5>
+              <p class="card-text">Some quick example</p>
+              
+            </div>
+          </div>
+          <div class="card" style="width: 10rem;">
+            <img src="http://openweathermap.org/img/wn/10d.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title" id="dayFive"> date</h5>
+              <p class="card-text">Some quick example </p>
+              
+            </div>
+          </div>
+</div>
+
+
+    </section>
+
+        
+</div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/script.js"></script> 
+</body>
+</html>
