@@ -16,9 +16,6 @@ function currentWeather(city) {
   })
 }
 
-
-
-
 //function for current weather
 
  function WeatherInfo(response) {
